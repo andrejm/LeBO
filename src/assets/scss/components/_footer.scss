@@ -14,12 +14,15 @@
 
 	&__col {
 		@include xy-cell();
+		margin-bottom: rem-calc( 32 );
+		text-align: center;
 
 		&--middle {
 			display: flex;
 			flex-flow: column nowrap;
-			text-align: center;
+			// text-align: center;
 			align-items: center;
+			// order: -1;
 
 			p {
 				max-width: rem-calc( 240 );
@@ -31,9 +34,15 @@
 		font-size: rem-calc( 22 );
 	}
 
-	@include breakpoint( medium ) {
+	@include breakpoint( large ) {
 		&__col {
 			@include xy-cell( 4 );
+			margin-bottom: 0;
+			text-align: left;
+
+			&--middle {
+				order: unset;
+			}
 
 			&--separated {
 				border-left: 1px solid $white;

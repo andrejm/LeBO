@@ -2,9 +2,23 @@
 	@include reset-list();
 	display: flex;
 	flex-flow: row nowrap;
+	justify-content: center; 
 	margin-top: rem-calc( 32 );
 
 	&__item {
-		margin-right: rem-calc( 32 );
+		margin-right: rem-calc( 16 );
+		min-width: rem-calc( 40 );
+
+		&:last-of-type {
+			margin: 0;
+		}
+	}
+
+	@include breakpoint( medium ) {
+
+	}
+
+	@include breakpoint( large ) {
+		justify-content: left;
 	}
 }
