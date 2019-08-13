@@ -18,6 +18,8 @@ import autoprefixer  from 'autoprefixer';
 // Load all Gulp plugins into one variable
 const $ = plugins();
 
+console.log( $ );
+
 // Check for --production flag
 const PRODUCTION = !!(yargs.argv.production);
 
@@ -91,6 +93,7 @@ function sass() {
   ].filter(Boolean);
 
   return gulp.src('src/assets/scss/app.scss')
+    .pipe($.sassGlob())
     .pipe($.sourcemaps.init())
     .pipe($.sass({
       includePaths: PATHS.sass

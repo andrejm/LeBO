@@ -1,0 +1,10 @@
+.menu-social {
+	@include reset-list();
+	display: flex;
+	flex-flow: row nowrap;
+	margin-top: rem-calc( 32 );
+
+	&__item {
+		margin-right: rem-calc( 32 );
+	}
+}

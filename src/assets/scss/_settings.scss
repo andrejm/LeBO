@@ -68,13 +68,20 @@
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
+$lebo-primary: #315F72; //base modra
+$lebo-primary-dark: #254F5D; //tmavsia modra
+// $lebo-secondary: ;
+$lebo-extra-1: #DE9BA8; //ruzova
+$lebo-extra-2: #87C0BD; //slabomodra
+$lebo-extra-3: #E4A84B; //zlata
 $foundation-palette: (
-  primary: #1779ba,
-  secondary: #767676,
+  primary: $lebo-primary,
+  secondary: $lebo-extra-1,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
 );
+
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
@@ -82,7 +89,7 @@ $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: 'PT Sans', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -132,7 +139,7 @@ $block-grid-max: 8;
 // ------------------
 
 $header-font-family: $body-font-family;
-$header-font-weight: $global-weight-normal;
+$header-font-weight: $global-weight-bold;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: inherit;
@@ -171,7 +178,7 @@ $code-padding: rem-calc(2 5 1);
 $anchor-color: $primary-color;
 $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
-$anchor-text-decoration-hover: none;
+$anchor-text-decoration-hover: underline;
 $hr-width: $global-width;
 $hr-border: 1px solid $medium-gray;
 $hr-margin: rem-calc(20) auto;

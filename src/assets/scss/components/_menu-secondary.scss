@@ -1,0 +1,7 @@
+.menu-secondary {
+	@include reset-list();
+	
+	&__href {
+		font-weight: $global-weight-bold;
+	}
+}

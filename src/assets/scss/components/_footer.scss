@@ -1,0 +1,44 @@
+.footer {
+	background-color: $primary-color;
+	color: $white;
+	padding: rem-calc( 36 0 );
+
+	a {
+		color: $white;
+	}
+
+	&__inner {
+		@include xy-grid-container();
+		@include xy-grid;
+	}
+
+	&__col {
+		@include xy-cell();
+
+		&--middle {
+			display: flex;
+			flex-flow: column nowrap;
+			text-align: center;
+			align-items: center;
+
+			p {
+				max-width: rem-calc( 240 );
+			}
+		}
+	}
+
+	&__title {
+		font-size: rem-calc( 22 );
+	}
+
+	@include breakpoint( medium ) {
+		&__col {
+			@include xy-cell( 4 );
+
+			&--separated {
+				border-left: 1px solid $white;
+				padding-left: rem-calc( 100 );
+			}
+		}
+	}
+}
