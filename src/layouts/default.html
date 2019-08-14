@@ -11,42 +11,66 @@
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
 <body>
+	<header class="header">
+		<div class="top-bar header__inner">
+		  <div class="top-bar-left">
+		    <h1 class="header__title">
+		    	<img src="/assets/img/logo-main.svg" alt="LeBO logo" class="header__logo">
+		    	<span>LeBO - kde si rodičia a deti rozumejú</span>
+		    </h1>
+		  </div>
+		  <div class="top-bar-right">
+		    <nav class="main-navigation">
+		    	<ul class="main-menu">
+		    		<li class="main-menu__item"><a href="/" class="main-menu__href">Úvod</a></li>
+		    		<li class="main-menu__item"><a href="/nase-aktivity/" class="main-menu__href">Aktivity</a></li>
+		    		<li class="main-menu__item"><a href="/kontakt/" class="main-menu__href">Kontakt</a></li>
+		    	</ul>
+		    </nav>
+		  </div>
+		</div>
+	</header>
 
+	<div class="site">
+		
 {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
 {{> body}}
-
-<footer class="footer">
-	<div class="footer__inner">
-		<div class="footer__col">
-			<nav class="">
-				<ul class="menu-secondary">
-					<li class="menu-secondary__item">
-						<a href="/" class="menu-secondary__href">Úvodná stránka</a>
-					</li>
-					<li class="menu-secondary__item">
-						<a href="/nase-aktivity/" class="menu-secondary__href">Naše aktivity</a>
-					</li>
-					<li class="menu-secondary__item">
-						<a href="/kontakt/" class="menu-secondary__href">Kontakt</a>					
-					</li>
-				</ul>
-				<ul class="menu-social">
-					<li class="menu-social__item"><a href="" class="menu-social__href"><img src="/assets/img/ico-social-fb.svg" alt="" class="menu-social__icon"></a></li>
-					<li class="menu-social__item"><a href="" class="menu-social__href"><img src="/assets/img/ico-social-insta.svg" alt="" class="menu-social__icon"></a></li>
-				</ul>
-			</nav>
-		</div>
-		<div class="footer__col footer__col--middle">
-			<h4 class="footer__title">Prečo LeBO?</h4>
-			<p>Rodina je ako bezpečné hniezdo (po švédsky “Bo”). LeBO keď si rozumieme, sme spolu radi.</p>
-			<img src="/assets/img/logo-white.svg" alt="LeBO logo">
-		</div>
-		<div class="footer__col footer__col--separated">
-			<h4 class="footer__title">Nechcete zmeškať kurz?</h4>
-			<p>Nechajte nám e-mail a my vám pripomenieme blížiaci sa termín.</p>
-		</div>
+		
 	</div>
-</footer>
+
+
+	<footer class="footer">
+		<div class="footer__inner">
+			<div class="footer__col">
+				<nav class="">
+					<ul class="menu-secondary">
+						<li class="menu-secondary__item">
+							<a href="/" class="menu-secondary__href">Úvodná stránka</a>
+						</li>
+						<li class="menu-secondary__item">
+							<a href="/nase-aktivity/" class="menu-secondary__href">Naše aktivity</a>
+						</li>
+						<li class="menu-secondary__item">
+							<a href="/kontakt/" class="menu-secondary__href">Kontakt</a>					
+						</li>
+					</ul>
+					<ul class="menu-social">
+						<li class="menu-social__item"><a href="" class="menu-social__href"><img src="/assets/img/ico-social-fb.svg" alt="" class="menu-social__icon"></a></li>
+						<li class="menu-social__item"><a href="" class="menu-social__href"><img src="/assets/img/ico-social-insta.svg" alt="" class="menu-social__icon"></a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="footer__col footer__col--middle">
+				<h4 class="footer__title">Prečo LeBO?</h4>
+				<p>Rodina je ako bezpečné hniezdo (po švédsky “Bo”). LeBO keď si rozumieme, sme spolu radi.</p>
+				<img src="/assets/img/logo-white.svg" alt="LeBO logo">
+			</div>
+			<div class="footer__col footer__col--separated">
+				<h4 class="footer__title">Nechcete zmeškať kurz?</h4>
+				<p>Nechajte nám e-mail a my vám pripomenieme blížiaci sa termín.</p>
+			</div>
+		</div>
+	</footer>
 
 <script src="{{root}}assets/js/app.js"></script>
 </body>

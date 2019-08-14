@@ -1,0 +1,10 @@
+.main-navigation {
+	width: 100%;
+	height: 100%;
+	overflow-y: hidden;
+	overflow-x: scroll;
+
+	@include breakpoint( medium ) {
+		overflow-x: auto;
+	}
+}

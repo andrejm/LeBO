@@ -1,0 +1,38 @@
+.main-menu {
+	@include reset-list();
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	font-size: rem-calc( 22 );
+
+	&__href {
+		padding: rem-calc( 8 8 );
+	}
+
+	
+	/////////// MEDIUM ///////////
+
+
+
+	@include breakpoint( medium ) {
+		justify-content: flex-start;
+		
+		&__href {
+			padding: rem-calc( 8 16 );
+
+		}
+	}
+
+	
+	/////////// LARGE ///////////
+
+
+
+	@include breakpoint( large ) {
+		font-size: rem-calc( 26 );
+		
+		.header--fixed & {
+			font-size: rem-calc( 22 );
+		}
+	}
+}
