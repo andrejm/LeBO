@@ -1,5 +1,5 @@
 ---
-bodyclass: 
+bodyclass: color-scheme-1
 layout: default
 pagetitle: Spolu v tom
 ---
@@ -17,7 +17,7 @@ pagetitle: Spolu v tom
 			<img src="/assets/img/{{titleimage}}" alt="">
 			<span class="colorschemed-color">{{title}}</span>
 		</h1>
-		<h2 class="courseheader__context-info">{{context}}</h2>
+		<h2 class="courseheader__context-info colorschemed-c">{{context}}</h2>
 		<p class="courseheader__tagline">
 			{{tagline}}
 		</p>
@@ -32,7 +32,7 @@ pagetitle: Spolu v tom
 	</div>
 	<div class="coursecontent__side">
 		<div class="contentsbox">
-			<h3 class="contentsbox__title">Témy</h3>
+			<h3 class="contentsbox__title colorschemed-c">Témy</h3>
 			<dl class="contentsbox__contents">
 				{{#each contents}}
 				<dt>{{{title}}}</dt>
@@ -46,7 +46,7 @@ pagetitle: Spolu v tom
 </section>
 
 <section class="course-occurences">
-	<h3>Najbližšie termíny tohto kurzu</h3>
+	<h3 class="colorschemed-c">Najbližšie termíny tohto kurzu</h3>
 	<p>{{{occurences-description}}}</p>
 	<div class="course-occurences__items">
 	{{#each occurences}}
@@ -56,7 +56,7 @@ pagetitle: Spolu v tom
 				<span class="colorschemed-color">{{../title}}</span>			
 			</h5>
 			<p class="occurence__date">{{date}}</p>
-			<a href="{{url}}" class="button primary">VYPLNIŤ PRIHLÁŠKU</a>
+			<a href="{{url}}" class="button primary colorschemed-b">VYPLNIŤ PRIHLÁŠKU</a>
 			<p class="occurence__deadline">najneskôr do {{ddl}}</p>
 		</div>
 	{{/each}}
@@ -94,7 +94,7 @@ pagetitle: Spolu v tom
 				<h6 class="personcard__name">{{lookup (lookup @root.lecturers this) 'name'}}</h6>
 				<p class="personcard__excerpt">
 					{{lookup (lookup @root.lecturers this) 'excerpt'}} <br>
-					<a href="/o-nas/" class="personcard__readmore">Zistiť viac</a>
+					<a href="/o-nas/" class="personcard__readmore colorschemed-c">Zistiť viac</a>
 				</p>
 			</div>
 		</div>
@@ -113,7 +113,7 @@ pagetitle: Spolu v tom
 <section class="sharesection">
 	<div class="sharesection__inner">
 		<h3 class="sharesection__title">Viete o niekom, komu by sa kurz hodil?</h3>
-		<a href="#" class="button expanded large">ZDIEĽAJTE KURZ NA FACEBOOKU</a>
+		<a href="#" class="button expanded large colorschemed-b">ZDIEĽAJTE KURZ NA FACEBOOKU</a>
 		
 	</div>
 </section>

@@ -1,0 +1,71 @@
+.color-scheme {
+	&-1 {
+		.colorschemed-c {
+			color: $lebo-extra-1;
+
+			@at-root #{&}-666 & {
+
+			}
+		}
+
+		.colorschemed-bgc {
+			background-color: $lebo-extra-1;
+		}
+
+		.colorschemed-bc {
+			border-color: $lebo-extra-1;
+		}
+
+		.colorschemed-b {
+			background-color: $lebo-extra-1;
+
+			&::hover {
+				background-color: scale-color($lebo-extra-1, $lightness: -15%); //taken from _settings.scss
+			}
+		}
+	}
+
+	&-2 {
+		.colorschemed-c {
+			color: $lebo-extra-2;
+		}
+
+		.colorschemed-bgc {
+			background-color: $lebo-extra-2;
+		}
+
+		.colorschemed-bc {
+			border-color: $lebo-extra-2;
+		}
+
+		.colorschemed-b {
+			background-color: $lebo-extra-2;
+
+			&::hover {
+				background-color: scale-color($lebo-extra-2, $lightness: -15%); //taken from _settings.scss
+			}
+		}
+	}
+
+	&-3 {
+		.colorschemed-c {
+			color: $lebo-extra-3;
+		}
+
+		.colorschemed-bgc {
+			background-color: $lebo-extra-3;
+		}
+
+		.colorschemed-bc {
+			border-color: $lebo-extra-3;
+		}
+
+		.colorschemed-b {
+			background-color: $lebo-extra-3;
+
+			&::hover {
+				background-color: scale-color($lebo-extra-3, $lightness: -15%); //taken from _settings.scss
+			}
+		}
+	}
+}

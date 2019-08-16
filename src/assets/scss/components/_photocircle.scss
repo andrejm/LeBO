@@ -6,6 +6,18 @@
 	margin: 0 auto;
 	padding: 10% 0;
 
+	.color-scheme-1 & {
+		background-image: url('/assets/img/photocircle-1.svg');
+	}
+
+	.color-scheme-2 & {
+		background-image: url('/assets/img/photocircle-2.svg');
+	}
+
+	.color-scheme-3 & {
+		background-image: url('/assets/img/photocircle-3.svg');
+	}
+
 
 	&__image {
 		border: 1px solid transparent;
