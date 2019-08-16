@@ -1,0 +1,24 @@
+.occurence {
+	@include lebox;
+	padding: rem-calc( 20 );
+	text-align: center;	
+
+	&__title {
+		@include visuallyhiddentext();
+	}
+
+	&__date {
+		font-weight: $global-weight-bold;
+	}
+
+	&__deadline {
+		font-size: rem-calc( 14 );
+	}
+	
+	@include breakpoint( medium ) {
+		&__date {
+			font-size: rem-calc( 26 );
+		}
+
+	}
+}

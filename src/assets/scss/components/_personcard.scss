@@ -1,0 +1,10 @@
+.personcard {
+	text-align: center;
+	margin: rem-calc( 16 ) auto;
+
+	&__readmore {
+		text-transform: uppercase;
+		font-weight: $global-weight-bold;
+	}
+
+}

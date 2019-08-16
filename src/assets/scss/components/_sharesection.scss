@@ -1,0 +1,28 @@
+.sharesection {
+	@include xy-grid-container;
+	@include xy-grid;
+	text-align: center;
+
+	&__inner {
+		@include xy-cell;
+	}
+
+	&__title {
+		font-weight: $global-weight-normal;
+	}
+
+	@include breakpoint( medium ) {
+		justify-content: center;
+		margin-top: $lebo-section-spacing;
+		margin-bottom: $lebo-section-spacing;
+		
+		&__inner {
+			@include xy-cell( 8 );
+		}
+
+		&__title {
+			margin-bottom: $lebo-section-spacing;
+		}
+	}
+	
+}

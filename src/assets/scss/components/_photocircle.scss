@@ -1,0 +1,31 @@
+.photocircle {
+	text-align: center;
+	background: url('/assets/img/photocircle-default.svg') no-repeat center;
+	background-size: contain;
+	max-width: rem-calc( 240 );
+	margin: 0 auto;
+	padding: 10% 0;
+
+
+	&__image {
+		border: 1px solid transparent;
+		border-radius: 50%;
+		max-width: 84%;
+		margin: 0 auto;
+		position: relative;
+		left: 2px;
+		top: 2px;
+	}
+
+	@include breakpoint( medium ) {
+		&__image {
+			max-width: 70%;
+		}
+	}
+
+	@include breakpoint( large ) {
+		&__image {
+			max-width: 82%;
+		}
+	}
+}

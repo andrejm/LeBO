@@ -1,0 +1,48 @@
+.courseheader {
+	text-align: center;
+
+	&__inner {
+		@include xy-grid-container;
+	}
+	
+	&__title {
+		@include visuallyhiddentext();
+		display: flex;
+		justify-content: center;
+	}
+
+	&__context-info {
+
+	}
+
+	&__tagline {
+
+	}
+
+	@include breakpoint( medium ) {
+		&__title {
+			img {
+				min-width: rem-calc( 300 );
+
+			}
+		}
+	}
+
+	@include breakpoint( large ) {
+		margin-bottom: rem-calc( 64 );
+		&__title {
+			img {
+				min-width: rem-calc( 600 );
+			}
+		}
+
+		&__context-info {
+			font-size: rem-calc( 48 );
+		}
+
+		&__tagline {
+			font-size: rem-calc( 48 );
+			font-weight: $global-weight-bold;
+		}
+	}
+}

@@ -1,0 +1,8 @@
+.button {
+	font-weight: $global-weight-bold;
+	letter-spacing: 0.5px;
+
+	@include breakpoint( large ) {
+		min-width: rem-calc( 220 );
+	}
+}

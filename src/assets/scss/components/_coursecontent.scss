@@ -1,0 +1,34 @@
+.coursecontent {
+	@include xy-grid-container();
+	@include xy-grid();
+
+	&__main, &__side {
+		@include xy-cell();
+	}
+
+	@include breakpoint( medium ) {
+		&__main {
+			@include xy-cell( 7 );
+			font-size: rem-calc( 22 );
+		}
+
+		&__side {
+			@include xy-cell( 5 );
+		}
+	}
+
+	@include breakpoint( large ) {
+		&__main {
+			@include xy-cell( 8 );
+			font-size: rem-calc( 26 );
+
+			&--textcontent {
+				padding-right: rem-calc( 48 );
+			}
+		}
+
+		&__side {
+			@include xy-cell( 4 );
+		}
+	}
+}

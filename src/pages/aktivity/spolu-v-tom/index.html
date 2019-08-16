@@ -1,0 +1,120 @@
+---
+bodyclass: 
+layout: default
+---
+
+{{#with activity-spolu-v-tom}}
+
+<section class="pagetop" style="background-image:url('/assets/img/{{headerimage}}')">
+<!-- breadcrumbs be here TODO	 -->
+</section>
+
+<header class="courseheader">
+	<div class="courseheader__inner">
+		
+		<h1 class="courseheader__title">
+			<img src="/assets/img/{{titleimage}}" alt="">
+			<span class="colorschemed-color">{{title}}</span>
+		</h1>
+		<h2 class="courseheader__context-info">{{context}}</h2>
+		<p class="courseheader__tagline">
+			{{tagline}}
+		</p>
+	</div>
+</header>
+
+<section class="coursecontent">
+	<div class="coursecontent__main coursecontent__main--textcontent">
+		{{#each description}}
+		<p>{{{this}}}</p>
+		{{/each}}
+	</div>
+	<div class="coursecontent__side">
+		<div class="contentsbox">
+			<h3 class="contentsbox__title">Témy</h3>
+			<dl class="contentsbox__contents">
+				{{#each contents}}
+				<dt>{{{title}}}</dt>
+				{{#if description}}
+				<dd>{{{description}}}</dd>
+				{{/if}}
+				{{/each}}
+			</dl>
+		</div>
+	</div>
+</section>
+
+<section class="course-occurences">
+	<h3>Najbližšie termíny tohto kurzu</h3>
+	<p>{{{occurences-description}}}</p>
+	<div class="course-occurences__items">
+	{{#each occurences}}
+		<div class="occurence">
+			<h5 class="occurence__title">
+				<img src="/assets/img/{{../titleimage}}" alt="">
+				<span class="colorschemed-color">{{../title}}</span>			
+			</h5>
+			<p class="occurence__date">{{date}}</p>
+			<a href="{{url}}" class="button primary">VYPLNIŤ PRIHLÁŠKU</a>
+			<p class="occurence__deadline">najneskôr do {{ddl}}</p>
+		</div>
+	{{/each}}
+	</div>
+</section>
+
+<section class="coursecontent">
+	<div class="coursecontent__main coursecontent__main--textcontent">
+		<h3>Časté otázky</h3>
+		<ul class="accordion accordion--faq" data-accordion data-allow-all-closed="true">
+		{{#each faqs}}
+		  <li class="accordion-item" data-accordion-item>
+		    <!-- Accordion tab title -->
+		    <a href="#" class="accordion-title">{{question}}</a>
+
+		    <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+		    <div class="accordion-content" data-tab-content>
+		      <p>{{answer}}</p>
+		    </div>
+		  </li>
+		{{/each}}
+		  <!-- ... -->
+		</ul>		
+	</div>
+	<div class="coursecontent__side">
+		<h5>Kto vás bude kurzom sprevádzať?</h5>
+		<!-- {{lookup (lookup @root.annotations-en event.pev-title) 'performer'}} -->
+
+		{{#each lecturer}}
+		<div class="personcard"> 
+			<div class="personcard__imagepart">
+				<div class="photocircle"><img src="/assets/img/profile-dummy-vierka.jpg" alt="" class="photocircle__image"></div>
+			</div>
+			<div class="personcard__textpart">
+				<h6 class="personcard__name">{{lookup (lookup @root.lecturers this) 'name'}}</h6>
+				<p class="personcard__excerpt">
+					{{lookup (lookup @root.lecturers this) 'excerpt'}} <br>
+					<a href="/o-nas/" class="personcard__readmore">Zistiť viac</a>
+				</p>
+			</div>
+		</div>
+		{{/each}}
+	</div>
+</section>
+
+<section class="quote">
+	<div class="quote__lq"></div>
+	<blockquote class="quote__content">
+		Rozhodnutie prísť na kurz „Spolu v tom“ sme ani na okamih neoľutovali. Z každého stretnutia sme išli veľmi dobre naladení. V priateľskej atmosfére sme nadobudli pocit, že už vieme, čo nás čaká a že to zvládneme.		
+	</blockquote>
+	<div class="quote__rq"></div>
+</section>
+
+<section class="sharesection">
+	<div class="sharesection__inner">
+		<h3 class="sharesection__title">Viete o niekom, komu by sa kurz hodil?</h3>
+		<a href="#" class="button expanded large">ZDIEĽAJTE KURZ NA FACEBOOKU</a>
+		
+	</div>
+</section>
+
+{{/with}}

@@ -1,0 +1,27 @@
+.course-occurences {
+	@include xy-grid-container();
+	
+	margin-top: $lebo-section-spacing;
+	margin-bottom: $lebo-section-spacing;
+
+	&__items {
+		@include xy-grid();
+		@include xy-grid-layout( 1, '.occurence');
+	}
+
+	&__title {
+	}
+
+	@include breakpoint( medium ) {
+		&__items {
+			@include xy-grid-layout( 2, '.occurence');
+		}
+			
+	}
+
+	@include breakpoint( large ) {
+		&__items {
+			@include xy-grid-layout( 3, '.occurence');
+		}
+	}
+}

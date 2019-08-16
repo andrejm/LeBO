@@ -1,0 +1,44 @@
+.quote {
+	@include xy-grid-container;
+	@include xy-grid;
+
+	&__lq, 
+	&__rq,
+	&__content {
+		@include xy-cell();
+	}
+
+	&__content {
+		// font-size: rem-calc( 38 );
+		text-align: center;
+	}
+
+	@include breakpoint( medium ) {
+		&__lq, &__rq {
+			@include xy-cell( 2 );
+			background: url('/assets/img/ico-lq.svg') no-repeat center;
+			background-size: contain;
+		}
+
+		&__rq {
+			background-image: url('/assets/img/ico-rq.svg');
+		}
+
+		&__content {
+			@include xy-cell( 8 );
+			font-size: rem-calc( 38 );
+			font-style: italic;
+		}	
+	}
+
+
+	@include breakpoint( large ) {
+		&__lq, &__rq {
+			@include xy-cell( 1 );
+		}
+
+		&__content {
+			@include xy-cell( 10 );
+		}	
+	}
+}

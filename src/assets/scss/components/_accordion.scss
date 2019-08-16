@@ -1,0 +1,11 @@
+.accordion.accordion--faq {
+	.accordion-title {
+		font-size: rem-calc( 22 );
+		font-weight: $global-weight-bold;
+
+		&::before {
+			left: 0;
+			top: 1.75rem; //this is pure ✨
+		}
+	}
+}

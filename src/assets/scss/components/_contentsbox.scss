@@ -1,0 +1,39 @@
+.contentsbox {
+	@include lebox();
+	padding: rem-calc( 40 );
+	margin-bottom: rem-calc( 16 );
+
+	&__title {
+		text-align: center;
+		// font-size: rem-calc( 32 ); //sized in settings as h3
+
+	}
+
+	&__contents {
+		dt {
+			&::before {
+				content: '\2022';
+				margin-right: rem-calc( 5 );
+			}
+
+		}
+
+		dd {
+			padding-left: rem-calc( 10 );
+			&::before {
+				content: '–';
+				margin-right: rem-calc( 5 );
+			}
+
+		}
+
+	}
+
+	@include breakpoint( large ) {
+		padding-top: rem-calc( 25 );
+		
+		&__title {
+			// font-size: rem-calc( 48 ); //sized in settings as h3
+		}
+	}
+}
