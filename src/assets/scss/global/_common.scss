@@ -16,11 +16,13 @@
     	left 50% top -120px,
     	center bottom;	
     background-repeat: no-repeat;
-    background-size: 150%;
+    background-size: 
+        150%,
+        120%;
 
     @include breakpoint( medium ) {
     	background-position: 
     	 left 50% top -500px,
-    	 center bottom;
+    	 left -500px bottom -1100px;
     }
 }
