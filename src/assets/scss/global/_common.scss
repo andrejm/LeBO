@@ -1,6 +1,7 @@
 .button {
 	font-weight: $global-weight-bold;
 	letter-spacing: 0.5px;
+    text-transform: uppercase;
 
 	@include breakpoint( large ) {
 		min-width: rem-calc( 220 );
@@ -14,7 +15,7 @@
 		url('/assets/img/background-page-default.svg');
     background-position: 
     	left 50% top -120px,
-    	center bottom;	
+    	center bottom;
     background-repeat: no-repeat;
     background-size: 
         150%,
@@ -24,5 +25,29 @@
     	background-position: 
     	 left 50% top -500px,
     	 left -500px bottom -1100px;
+    }
+}
+
+.page-activities {
+    background-color: $white;
+    background-image: 
+        url('/assets/img/background-page-default.svg'),
+        url('/assets/img/background-page-gold.svg'),
+        url('/assets/img/background-page-pink.svg');
+    background-position: 
+        left 50% top -120px,
+        center bottom, 
+        left 80% top 50%;	
+    background-repeat: no-repeat;
+    background-size: 
+        125%,
+        120%,
+        75%;
+
+    @include breakpoint( medium ) {
+        background-position: 
+         left 50% top -640px,
+         left -1100px bottom -1100px,
+         right -600px top 60%
     }
 }

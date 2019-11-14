@@ -1,0 +1,70 @@
+---
+bodyclass: page-activities
+layout: default
+pagetitle: Naše aktivity
+---
+
+{{#with activity}}
+
+
+<section class="pagetop" style="background-image:url('/assets/img/{{headerimage}}')">
+<!-- breadcrumbs be here TODO	 -->
+</section>
+
+<header class="courseheader">
+	<div class="courseheader__inner">
+		
+		<h1 class="courseheader__title">
+			<img src="/assets/img/{{titleimage}}" alt="">
+			<span class="colorschemed-c">{{title}}</span>
+		</h1>
+		<h2 class="courseheader__context-info colorschemed-c">{{context}}</h2>
+		<p class="courseheader__tagline">
+			{{tagline}}
+		</p>
+		<p class="courseheader__introtext">
+			{{{introtext}}}
+		</p>
+	</div>
+</header>
+
+<section class="activities">
+	{{#each activities as |a|}}
+	<div class="activity-group {{a.color-scheme}}">
+		<div class="activity-group__titlepart">
+			<h2 class="activity-group__title">
+				<img src="/assets/img/{{a.titleimage}}" alt="">
+				<span class="colorschemed-c">{{a.title}}</span>			
+			</h2>
+		</div>
+		<div class="activity-group__timelinepart">
+			<div class="activity-group__ico">
+				<img src="/assets/img/{{a.activity-icon}}" alt="Ilustracia {{a.title}}"> 
+			</div>
+			<div class="activity-group__guide">
+			</div>
+		</div>
+		<div class="activity-group__contentpart">
+			{{#each a.content}}
+				<p>{{this}}</p>
+			{{/each}}
+
+			<a href="/aktivity/{{a.slug}}" class="button large colorschemed-b">Viac info a termíny kurzov</a>
+
+			<ul class="related-activities">
+				{{#each a.related-activities as |related-activity|}}
+				<li class="related-activities__item">
+					<h5 class="related-activities__title">{{related-activity.title}}</h5>
+					<p class="related-activities__perex">{{related-activity.perex}}</p>
+					<p>
+						<a href="{{related-activity.link}}" class="related-activities__href colorschemed-c">VIAC INFO A TERMÍNY</a>
+					</p>
+				</li>
+				{{/each}}
+			</ul>
+		</div>
+	</div>
+	{{/each}}
+</section>
+
+{{/with}}

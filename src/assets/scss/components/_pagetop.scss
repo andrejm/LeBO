@@ -3,6 +3,7 @@
 	background-size: cover;
 	background-position: center bottom;
 	min-height: rem-calc( 200 );
+	margin-bottom: -10%;
 
 	@include breakpoint( medium ) {
 		min-height: rem-calc( 250 );
@@ -10,6 +11,7 @@
 
 	@include breakpoint( large ) {
 		min-height: rem-calc( 550 );
+		margin-bottom: -6%;
 		
 	}
 }

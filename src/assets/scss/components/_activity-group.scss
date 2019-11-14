@@ -1,0 +1,54 @@
+.activity-group {
+	@include xy-grid();	
+
+	&__title {
+		@include visuallyhiddentext();
+	}
+
+	@include breakpoint( medium ) {
+		&__titlepart {
+			@include xy-cell( 8 );
+			@include xy-cell-offset( 3 );
+		}
+
+		&__timelinepart {
+			@include xy-cell( 3 );
+			display: flex;
+			flex-flow: column nowrap;
+		}
+
+		&__ico {
+			display: flex;
+			justify-content: center;
+
+			img {
+				max-height: rem-calc( 200 );
+			}
+		}
+
+		&__guide {
+			flex: 1;
+			background-image: url('../img/arrow-down-01.svg');
+			background-repeat: no-repeat;
+			background-size: auto 350px;
+			background-position: center bottom;
+			border-top: rem-calc( 16 ) solid transparent;
+
+			.activity-group:nth-of-type(2n+2) & {
+				background-image: url('../img/arrow-down-02.svg');
+			}
+
+			.activity-group:last-child & {
+				background-image: none;
+			}
+		}
+
+		&__contentpart {
+			@include xy-cell( 8 );
+			> p {
+				font-size: $lebo-introtext-size;
+			}
+		}
+	}
+	
+}

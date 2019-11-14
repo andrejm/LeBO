@@ -1,0 +1,17 @@
+.related-activities {
+	@include reset-list();
+	@include xy-grid;
+	margin: rem-calc( 16 0 );
+
+	&__item {
+		margin-bottom: rem-calc( 16 );
+	}
+
+	@include breakpoint( medium ) {
+		@include xy-grid-layout(2, '.related-activities__item');
+
+		& > &__item {
+			margin-left: rem-calc( 0 );
+		}
+	}
+}

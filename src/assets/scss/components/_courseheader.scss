@@ -9,6 +9,9 @@
 		@include visuallyhiddentext();
 		display: flex;
 		justify-content: center;
+		img {
+			max-width: 80%;
+		}
 	}
 
 	&__context-info {
@@ -19,12 +22,22 @@
 
 	}
 
+	&__introtext {
+		font-style: italic;
+		max-width: rem-calc( 900 );
+		margin: 0 auto;
+	}
+
 	@include breakpoint( medium ) {
 		&__title {
 			img {
 				min-width: rem-calc( 300 );
-
+				max-width: rem-calc( 590 );
 			}
+		}
+
+		&__introtext {
+			font-size: $lebo-introtext-size;
 		}
 	}
 

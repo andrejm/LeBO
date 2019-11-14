@@ -1,0 +1,59 @@
+headerimage: TOP_BANNER_1920x830_V03_aktiv_3.png
+title: Naše aktivity
+titleimage: title-aktivity.svg
+introtext: Byť dobrým rodičom je fuška. Čo ak ale všetko, čo k tomu potrebujete, už máte? Pomôžeme vám to v sebe objaviť. Nedáme vám návod ako premôcť hnev dvojročného. Získate niečo viac. Sebavedomie, že to zvládnete a porozumenie svojej ratolesti. <br>A s takýmto nákladom zvládnete každú situáciu. <br><strong>S láskou, s úsmevom. Lebo ste rodina.</strong>
+activities:
+  - 
+    title: Spolu v tom!
+    titleimage: title-spolu-v-tom.svg
+    slug: spolu-v-tom
+    activity-icon: ico-activity-01.svg
+    color-scheme: color-scheme-1
+    content:
+      - Bude ma pôrod bolieť? Čo mám robiť, keď bude bábo stále plakať? Je pravda, že už sa nikdy poriadne nevyspím? A ako zabezpečiť, aby nám to aj po narodení s partnerom klapalo? 
+      - Spolu v tom je najkomplexnejší kurz predpôrodnej prípravy v Bratislave. Dozviete sa, ako sa pripraviť na pôrod, spoznáte relaxačné pôrodné techniky, naučíte sa ako sa starať o novorodeniatko aj o partnerský vzťah.
+    related-activities:
+      - 
+        title: PODPORNÁ SKUPINA
+        perex: Zdieľanie s ostatnými je účinnejšie než najdrahšia terapia. VIAC INFO A TERMÍNY >
+        link: # 
+      - 
+        title: VÝBAVIČKA A PLIENKY NAŽIVO
+        perex: Praktický sprievodca svetom regálov detských výbavičiek.
+        link: # 
+  - 
+    title: S drobcami v pohode
+    titleimage: title-s-drobcami-v-pohode.svg
+    slug: s-drobcami-v-pohode
+    activity-icon: ico-activity-02.svg
+    color-scheme: color-scheme-2
+    content:
+      - Bude ma pôrod bolieť? Čo mám robiť, keď bude bábo stále plakať? Je pravda, že už sa nikdy poriadne nevyspím? A ako zabezpečiť, aby nám to aj po narodení s partnerom klapalo? 
+      - Spolu v tom je najkomplexnejší kurz predpôrodnej prípravy v Bratislave. Dozviete sa, ako sa pripraviť na pôrod, spoznáte relaxačné pôrodné techniky, naučíte sa ako sa starať o novorodeniatko aj o partnerský vzťah.
+    related-activities:
+      - 
+        title: PODPORNÁ SKUPINA
+        perex: Zdieľanie s ostatnými je účinnejšie než najdrahšia terapia. VIAC INFO A TERMÍNY >
+        link: # 
+      - 
+        title: VÝBAVIČKA A PLIENKY NAŽIVO
+        perex: Praktický sprievodca svetom regálov detských výbavičiek.
+        link: # 
+  - 
+    title: Výchova bez porazených
+    titleimage: title-vychova-bez-porazenych.svg
+    slug: vychova-bez-porazenych
+    activity-icon: ico-activity-03.svg
+    color-scheme: color-scheme-3
+    content:
+      - Bude ma pôrod bolieť? Čo mám robiť, keď bude bábo stále plakať? Je pravda, že už sa nikdy poriadne nevyspím? A ako zabezpečiť, aby nám to aj po narodení s partnerom klapalo? 
+      - Spolu v tom je najkomplexnejší kurz predpôrodnej prípravy v Bratislave. Dozviete sa, ako sa pripraviť na pôrod, spoznáte relaxačné pôrodné techniky, naučíte sa ako sa starať o novorodeniatko aj o partnerský vzťah.
+    related-activities:
+      - 
+        title: PODPORNÁ SKUPINA
+        perex: Zdieľanie s ostatnými je účinnejšie než najdrahšia terapia. VIAC INFO A TERMÍNY >
+        link: # 
+      - 
+        title: VÝBAVIČKA A PLIENKY NAŽIVO
+        perex: Praktický sprievodca svetom regálov detských výbavičiek.
+        link: # 
