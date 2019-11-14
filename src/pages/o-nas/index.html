@@ -1,0 +1,109 @@
+---
+bodyclass: page
+layout: default
+pagetitle: O nás
+---
+
+{{#with about-us}}
+
+<header class="courseheader courseheader--spaced">
+	<div class="courseheader__inner">
+		
+		<h1 class="courseheader__title">
+			<img src="/assets/img/{{titleimage}}" alt="">
+			<span class="colorschemed-c">{{title}}</span>
+		</h1>
+		<h2 class="courseheader__context-info colorschemed-c">{{context}}</h2>
+		<p class="courseheader__tagline">
+			{{tagline}}
+		</p>
+		<p class="courseheader__introtext">
+			{{{introtext}}}
+		</p>
+	</div>
+</header>
+
+<section class="imagetext">
+	<div class="imagetext__inner">
+		<div class="imagetext__text">
+			<p>
+				My v LeBO veríme, že šťastné detstvo a zdravé vzťahy v rodine určujú celý budúci život. Zároveň sa svet okolo nás rýchlo mení a my by sme na to mali potomka pripraviť. So vzorcami z našej rodiny si už dávno nevystačíme.
+			</p>
+		</div>
+		<div class="imagetext__image">
+			<img src="/assets/img/arrow-left.svg" alt="">
+		</div>
+	</div>
+</section>
+
+<section class="imagetext imagetext--reverse">
+	<div class="imagetext__inner">
+		<div class="imagetext__text">
+			<p>
+				Vzali sme si preto to najlepšie od popredných výchovných špecialistov, pridali výsledky vedeckých výskumov aj vlastného materského bádania a vytvorili kurzy pre moderných rodičov. Pre rodičov, ktorí chcú, aby si ich deti boli isté sami sebou. Aby boli kreatívne a zodpovedné, dokázali byť spokojné v kolektíve aj osamote. A hlavne aby boli šťastné, pretože poznajú hodnotu svoju aj hodnotu ľudí vo svojom okolí.
+			</p>
+		</div>
+		<div class="imagetext__image">
+			<img src="/assets/img/arrow-right.svg" alt="">
+		</div>
+	</div>
+</section>
+
+<section class="imagetext">
+	<div class="imagetext__inner">
+		<div class="imagetext__text">
+			<h3>Prečo LeBO?</h3>
+			<p>
+				Rodina je ako bezpečné hniezdo (po švédsky “Bo”). LeBO keď si rozumieme, sme spolu radi.
+			</p>
+		</div>
+		<div class="imagetext__image">
+			<img src="/assets/img/logo-noclaim.svg" alt="">
+		</div>
+	</div>
+</section>
+
+<header class="courseheader">
+	<div class="courseheader__inner">
+		
+		<h1 class="courseheader__title">
+			<img src="/assets/img/title-kto-sme.svg" alt="">
+			<span class="colorschemed-c">Kto sme?</span>
+		</h1>
+	</div>
+</header>
+
+<section class="profiles">
+	<div class="profiles__inner">
+		
+		<div class="personcard personcard--large"> 
+			<div class="personcard__imagepart">
+				<div class="photocircle"><img src="/assets/img/profile-dummy-vierka.jpg" alt="" class="photocircle__image"></div>
+			</div>
+			<div class="personcard__textpart">
+				<h6 class="personcard__name">Zuzana Kiška Babitz</h6>
+				<p class="personcard__excerpt">
+					Dušou tanečnica, mysľou vizionárka a tak trochu naivka, teraz väčšinu bdelého času mama. Mám 33 rokov a 2 deti. Kým som ich nemala, najradšej na svete som pripravovala zážitkové akcie pre mladých dospelých, ktoré im umožňovali osobnostne rásť. Mám 10-ročné skúsenosti s prípravou a vedením rôznych seminárov a akreditáciu ako inštruktor zážitkového vzdelávania. Z mojej povahy vyplýva, že materstvo ma nemohlo zastihnúť nepripravenú a tak so sebou prinieslo množstvo preštudovaných kníh a prístupov, absolvovaných kurzov, no najmä veľa veľa práce na sebe samej. Je mi sympatické slobodné (ne)vzdelávanie a Waldorfská pedagogika.
+				</p>
+			</div>
+		</div>
+
+		<div class="personcard personcard--large personcard--reverse"> 
+			<div class="personcard__imagepart">
+				<div class="photocircle"><img src="/assets/img/profile-dummy-vierka.jpg" alt="" class="photocircle__image"></div>
+			</div>
+			<div class="personcard__textpart">
+				<h6 class="personcard__name">Monika Stullerová</h6>
+				<p class="personcard__excerpt">
+					Som mama dvoch dcér. A keď práve nemamujem, tak asi jogujem, experimentujem v kuchyni alebo niečo doma vylepšujem. Som zvedavá a preto večný študent. Okrem iného mám za sebou štúdium aplikovanej psychológie a doplňujuce pedagogické štúdium, skúsenosti s vyučovaním detí aj dospelých a s prácou s deťmi z detského domova na dobrovoľníckej úrovni. Absolvovala som kurzy z oblasti rešpektujúcej výchovy a montessori pedagogiky. To v čo verím a čo chcem odovzdať ďalej vzniklo kombináciou mojich osobných, študijných a pracovných skúsenosti, ale predovšetkým samoštúdiom a aktívnou prácou na sebe.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+{{>_sharesection ctatext="" buttontext="POZRITE SI NAŠE AKTIVITY" href="/aktivity/"}}
+
+{{/with}}

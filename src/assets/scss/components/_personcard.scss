@@ -7,4 +7,42 @@
 		font-weight: $global-weight-bold;
 	}
 
+	@include breakpoint( medium ) {
+		&--large {
+			@include xy-grid();
+
+			.personcard__textpart {
+				@include xy-cell(9);
+				text-align: left;
+
+				p {
+					font-size: $lebo-introtext-size;
+				}
+			}
+
+			.personcard__imagepart {
+				@include xy-cell(3);
+			    display: flex;
+			    flex-flow: column;
+				justify-content: center;
+			}
+
+			.personcard__name {
+				font-size: 3rem; //equals h3 TODO
+			}
+
+		}	
+		
+		&--reverse {
+			.personcard__textpart {
+				order: 1;
+				text-align: right;
+			}
+
+			.personcard__imagepart {
+				order: 2;
+			}
+
+		}
+	}
 }

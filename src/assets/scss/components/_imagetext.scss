@@ -1,0 +1,47 @@
+.imagetext {
+	@include xy-grid-container();
+
+	&__inner {
+		@include xy-grid();
+	}
+
+	&__text {
+		@include xy-cell();
+
+	}
+
+	&__image {
+		@include xy-cell();
+		display: none;
+	}
+
+	@include breakpoint( medium ) {
+		&__text {
+			@include xy-cell( 6 );
+			font-size: $lebo_introtext_size;
+			display: flex;
+			flex-flow: column nowrap;
+
+			justify-content: center;
+
+		}
+
+		&__image {
+			@include xy-cell( 6 );
+			display: flex;
+			justify-content: center;
+
+			img {
+				max-height: rem-calc( 300 );
+			}
+		}
+
+		&--reverse &__text {
+			order: 2;
+		}
+
+		&--reverse &__image {
+			order: 1;
+		}			
+	}
+}

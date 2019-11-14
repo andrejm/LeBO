@@ -1,6 +1,10 @@
 .courseheader {
 	text-align: center;
 
+	&--spaced {
+		margin-top: rem-calc( 32 );
+	}
+
 	&__inner {
 		@include xy-grid-container;
 	}
@@ -11,6 +15,7 @@
 		justify-content: center;
 		img {
 			max-width: 80%;
+			max-height: rem-calc( 60 );
 		}
 	}
 
@@ -29,10 +34,15 @@
 	}
 
 	@include breakpoint( medium ) {
+		&--spaced {
+			margin-top: rem-calc( 64 );
+		}
+
 		&__title {
 			img {
 				min-width: rem-calc( 300 );
 				max-width: rem-calc( 590 );
+				max-height: rem-calc( 100 );
 			}
 		}
 
@@ -43,6 +53,11 @@
 
 	@include breakpoint( large ) {
 		margin-bottom: rem-calc( 64 );
+
+		&--spaced {
+			margin-top: rem-calc( 96 );
+		}
+
 		&__title {
 			img {
 				min-width: rem-calc( 600 );
