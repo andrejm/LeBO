@@ -44,6 +44,7 @@
 				max-width: rem-calc( 590 );
 				max-height: rem-calc( 100 );
 			}
+
 		}
 
 		&__introtext {
@@ -61,6 +62,15 @@
 		&__title {
 			img {
 				min-width: rem-calc( 600 );
+			}
+
+			&--home {
+				img {
+					min-width: unset;
+					max-width: rem-calc( 590 );
+					max-height: unset;
+
+				}
 			}
 		}
 
