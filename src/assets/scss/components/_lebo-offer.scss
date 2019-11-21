@@ -1,0 +1,28 @@
+.lebo-offer {
+	@include xy-grid-container();
+
+	&__items {
+		@include xy-grid();
+	}
+
+	&__item {
+		margin-bottom: rem-calc( 16 );
+	}
+
+	@include breakpoint( medium ) {
+		&__items {
+			@include xy-grid-layout( 2, '.lebo-offer__item');
+		}
+
+		&__item {
+			display: flex;
+		}	
+	}
+
+	@include breakpoint( large ) {
+		&__items {
+			@include xy-grid-layout( 3, '.lebo-offer__item');
+		}
+			
+	}
+}

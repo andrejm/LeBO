@@ -1,0 +1,31 @@
+.offercard {
+	@include lebox();
+	padding: rem-calc( 40 );
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+
+	&__icon {
+		margin-bottom: rem-calc( 16 );
+	}
+
+	&__aimed-at {
+		text-align: center;
+		font-size: rem-calc( 16 );
+	}
+
+	&__title {
+		@include visuallyhiddentext();
+	}
+
+	&__description {
+		text-align: center;
+	}
+
+	&__cta {
+		margin-top: auto;
+	}
+
+	@include breakpoint( medium ) {
+	}
+}

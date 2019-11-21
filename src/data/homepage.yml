@@ -1,0 +1,34 @@
+headerimage: TOP_BANNER_1920x830_V03_home_1_small.png
+titleimage: title-spolu-v-tom.svg
+offers:
+  -
+    title: Spolu v tom
+    titleimage: title-spolu-v-tom.svg
+    icon: ico-offer-spolu-v-tom.svg
+    color-scheme: 1
+    aimed-at: PRE PÁRY V OČAKÁVANÍ
+    description: Spolu v tom je najkomplexnejší kurz predpôrodnej prípravy v Bratislave. Dozviete sa, ako sa pripraviť na pôrod, spoznáte relaxačné pôrodné techniky, naučíte sa ako sa starať o novorodeniatko aj o partnerský vzťah.
+    cta:
+      text: VIAC INFO A TERMÍNY
+      link: /aktivity/spolu-v-tom/
+  -
+    title: S drobcami v pohode
+    titleimage: title-s-drobcami-v-pohode.svg
+    icon: ico-offer-s-drobcami-v-pohode.svg
+    color-scheme: 2
+    aimed-at: PRE RODIČOV MALÝCH DETÍ
+    description: Naučte sa, ako sa dohodnúť s deťmi, ktoré síce ešte nehovoria, ale už vedia, čo chcú. Ako vychovať sebavedomého človeka aj bez autoritatívnej výchovy, či slobody bez hraníc. A ako si v každej situácii udržať nadhľad a pocit, že doma s drobcom je to fajn.
+    cta:
+      text: VIAC INFO A TERMÍNY
+      link: /aktivity/s-drobcami-v-pohode/
+  -
+    title: Výchova bez porazených
+    titleimage: title-vychova-bez-porazenych.svg
+    color-scheme: 3 
+    icon: ico-offer-vychova-bez-porazenych.svg
+    aimed-at: KURZ PRE RODIČOV ŠKOLÁKOV
+    description: V jednom z celosvetovo najúspešnejších výchovných kurzov sa naučíte, ako s deťmi komunikovať, keď nechcú počúvať. Alebo ako sa naučiť nebáť riešiť svoje problémy. A čo robiť, keď každý z vás chce niečo iné.
+    cta:
+      text: VIAC INFO A TERMÍNY
+      link: /aktivity/vychova-bez-porazenych/
+

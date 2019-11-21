@@ -72,3 +72,23 @@
          right -600px top 60%
     }
 }
+
+.home {
+    background-color: $white;
+    background-image: 
+        url('/assets/img/background-page-default.svg'),
+        url('/assets/img/background-page-gold.svg');
+    background-position: 
+        left 50% top -120px,
+        center bottom;
+    background-repeat: no-repeat;
+    background-size: 
+        125%,
+        120%;
+
+    @include breakpoint( medium ) {
+        background-position: 
+         left 50% top -640px,
+         left -1100px bottom -1100px;
+    }
+}

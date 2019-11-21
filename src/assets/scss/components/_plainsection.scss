@@ -1,0 +1,16 @@
+.plainsection {
+	@include xy-grid-container();
+	@include xy-grid();
+
+	font-size: $lebo-introtext-size;
+	text-align: center;
+
+	&__title {
+		flex: 1 0 100%;
+	}
+
+	@include breakpoint( medium ) {
+		margin-top: $lebo-section-spacing;
+		margin-bottom: $lebo-section-spacing;	
+	}
+}
