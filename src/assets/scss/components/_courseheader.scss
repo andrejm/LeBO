@@ -14,7 +14,6 @@
 		display: flex;
 		justify-content: center;
 		img {
-			max-width: 80%;
 			max-height: rem-calc( 60 );
 		}
 	}
@@ -40,9 +39,10 @@
 
 		&__title {
 			img {
-				min-width: rem-calc( 300 );
-				max-width: rem-calc( 590 );
+				// min-width: rem-calc( 300 );
+				// max-width: rem-calc( 590 );
 				max-height: rem-calc( 120 );
+				height: rem-calc( 120 );
 			}
 
 		}
@@ -61,16 +61,8 @@
 
 		&__title {
 			img {
-				min-width: rem-calc( 600 );
-			}
-
-			&--home {
-				img {
-					min-width: unset;
-					max-width: rem-calc( 590 );
-					max-height: unset;
-
-				}
+				max-height: rem-calc( 160 );
+				height: rem-calc( 160 );
 			}
 		}
 
