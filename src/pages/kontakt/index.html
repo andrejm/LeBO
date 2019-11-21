@@ -1,0 +1,37 @@
+---
+bodyclass: page
+layout: default
+pagetitle: Kontakt
+---
+
+{{#with contact}}
+
+<section class="pagetop" style="background-image:url('/assets/img/{{headerimage}}')">
+<!-- breadcrumbs be here TODO  -->
+</section>
+
+<header class="courseheader courseheader--spaced">
+  <div class="courseheader__inner">
+    
+    <h1 class="courseheader__title">
+      <img src="/assets/img/{{titleimage}}" alt="">
+      <span class="colorschemed-c">{{title}}</span>
+    </h1>
+    <h2 class="courseheader__context-info colorschemed-c">{{context}}</h2>
+    <p class="courseheader__tagline">
+      {{tagline}}
+    </p>
+    <p class="courseheader__introtext">
+      Napíšte nám email na ahoj@lebokurzy.sk, zavolajte Kiške na tel +421 903 653 233 alebo nám napíšte <a href="">na Facebooku</a> 
+
+      <br>
+      <br>
+
+      <strong>— Kiška, Monika</strong>
+    </p>
+  </div>
+</header>
+
+{{>_sharesection ctatext="" buttontext="POZRITE SI ČO ROBÍME" href="/aktivity/"}}
+
+{{/with}}
