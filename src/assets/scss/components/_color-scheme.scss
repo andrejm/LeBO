@@ -19,7 +19,7 @@
 		.colorschemed-b {
 			background-color: $lebo-extra-1;
 
-			&::hover {
+			&:hover {
 				background-color: scale-color($lebo-extra-1, $lightness: -15%); //taken from _settings.scss
 			}
 		}
@@ -41,7 +41,7 @@
 		.colorschemed-b {
 			background-color: $lebo-extra-2;
 
-			&::hover {
+			&:hover {
 				background-color: scale-color($lebo-extra-2, $lightness: -15%); //taken from _settings.scss
 			}
 		}
@@ -63,7 +63,7 @@
 		.colorschemed-b {
 			background-color: $lebo-extra-3;
 
-			&::hover {
+			&:hover {
 				background-color: scale-color($lebo-extra-3, $lightness: -15%); //taken from _settings.scss
 			}
 		}
