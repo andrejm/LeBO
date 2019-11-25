@@ -88,7 +88,7 @@ pagetitle: Spolu v tom
 		{{#each lecturer}}
 		<div class="personcard"> 
 			<div class="personcard__imagepart">
-				<div class="photocircle"><img src="/assets/img/profile-dummy-vierka.jpg" alt="" class="photocircle__image"></div>
+				<div class="photocircle"><img src="/assets/img/{{lookup (lookup @root.lecturers this) 'profilepic'}}" alt="" class="photocircle__image"></div>
 			</div>
 			<div class="personcard__textpart">
 				<h6 class="personcard__name">{{lookup (lookup @root.lecturers this) 'name'}}</h6>
